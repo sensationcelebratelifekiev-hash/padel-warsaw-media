@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Padel Warsaw Bot Policies</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+  /* Layout: single reading column, sticky section nav on top, three legal documents on one page with stable anchors. */
+  :root {
+    --bg: #fbfbf7;
+    --fg: #1d2117;
+    --muted: #5d6354;
+    --line: #d9dccd;
+    --accent: #3f7d2e;
+    --panel: #f1f3e8;
+    --display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15180f; --fg: #e9ebdf; --muted: #a6ab98; --line: #2f3427; --accent: #8fcf6a; --panel: #1d2116; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15180f; --fg: #e9ebdf; --muted: #a6ab98; --line: #2f3427; --accent: #8fcf6a; --panel: #1d2116; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { padding-block: 40px 24px; border-bottom: 1px solid var(--line); }
+  .eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+  h1 { font-family: var(--display); font-weight: 600; font-size: clamp(28px, 5vw, 38px); line-height: 1.15; margin: 0 0 12px; text-wrap: balance; }
+  header p { margin: 0; color: var(--muted); max-width: 60ch; }
+  nav { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); border-bottom: 1px solid var(--line); padding-block: 10px; display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; font-weight: 500; z-index: 2; }
+  nav a { color: var(--accent); text-decoration: none; }
+  nav a:hover, nav a:focus-visible { text-decoration: underline; outline: none; }
+  section { padding-block: 36px 8px; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-family: var(--display); font-weight: 600; font-size: 26px; margin: 0 0 4px; text-wrap: balance; }
+  .updated { font-size: 13px; color: var(--muted); margin: 0 0 20px; }
+  h3 { font-size: 17px; font-weight: 600; margin: 28px 0 8px; }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 22px; margin: 8px 0 16px; }
+  li { margin: 4px 0; }
+  .panel { background: var(--panel); border-left: 3px solid var(--accent); padding: 14px 18px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+  .panel p { margin: 0 0 6px; }
+  .panel p:last-child { margin: 0; }
+  code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 14px; background: var(--panel); padding: 1px 5px; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0 20px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  .tablewrap { overflow-x: auto; }
+  footer { padding-block: 32px 0; font-size: 13px; color: var(--muted); }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Padel Warsaw · community tool for Threads</p>
+    <h1>Padel Warsaw Bot — Privacy Policy, Terms of Service and Data Deletion</h1>
+    <p>Padel Warsaw Bot is an internal tool used by the Padel Warsaw team to manage the <a href="https://www.threads.com/@padel_warsaw">@padel_warsaw</a> profile on Threads through the official Threads API. These three documents describe what the tool does with data and how to ask us to delete it.</p>
+  </header>
+
+  <nav aria-label="Documents">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Service</a>
+    <a href="#data-deletion">Data Deletion</a>
+  </nav>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="updated">Effective 19 October 2026</p>
+
+    <h3>1. Who we are</h3>
+    <p>Padel Warsaw ("we", "us") is a padel community in Warsaw, Poland, that organises amateur tournaments and beginner sessions. We operate the Threads profile @padel_warsaw and the Instagram profile @padel_warsaw. Padel Warsaw Bot (the "App") is a software tool registered with Meta Platforms that connects to the Threads API on behalf of our own Threads profile.</p>
+
+    <h3>2. What the App does</h3>
+    <ul>
+      <li>Publishes posts and replies on the @padel_warsaw Threads profile that were written by our team.</li>
+      <li>Reads replies to our own posts so the team can answer them.</li>
+      <li>Reads performance statistics (views, likes, replies, reposts) of our own posts and profile.</li>
+      <li>Searches public Threads posts for keywords related to padel, tennis partners and leisure in Warsaw, and shows those results to our community manager, who may answer a post from @padel_warsaw.</li>
+      <li>Looks up public Threads profiles of people who interact with us, to show their public display name, bio and follower count.</li>
+      <li>Reads public posts that mention @padel_warsaw so the team can answer them.</li>
+    </ul>
+
+    <h3>3. Data we process</h3>
+    <div class="tablewrap">
+    <table>
+      <tr><th>Data</th><th>Source</th><th>Purpose</th><th>Retention</th></tr>
+      <tr><td>Our own posts, replies and their statistics</td><td>Threads API</td><td>Publishing, answering replies, measuring reach</td><td>Kept while the profile exists</td></tr>
+      <tr><td>Public posts returned by keyword search or mentions: post ID, text, author username, link, time</td><td>Threads API</td><td>Letting the team find and answer relevant public conversations; avoiding duplicate replies</td><td>30 days, then deleted</td></tr>
+      <tr><td>Public profile fields: username, display name, bio, follower count</td><td>Threads API</td><td>Deciding whether a reply is relevant</td><td>Not stored beyond the working session</td></tr>
+      <tr><td>Access token for our own profile</td><td>Meta OAuth</td><td>Authenticating the App</td><td>Until revoked or expired</td></tr>
+    </table>
+    </div>
+
+    <h3>4. What we do not do</h3>
+    <ul>
+      <li>We do not sell, rent or share any data obtained through the Threads API with third parties.</li>
+      <li>We do not build profiles of individuals, do not track people across services and do not use the data for advertising.</li>
+      <li>We do not send bulk, automated or templated replies. Every reply is written for a specific post.</li>
+      <li>We do not access private content. The App only reads content that is public on Threads or belongs to our own profile.</li>
+    </ul>
+
+    <h3>5. Where data is stored and who can access it</h3>
+    <p>Data is stored on devices and cloud workspaces controlled by the Padel Warsaw team, protected by passwords and two-factor authentication. Only team members who manage the @padel_warsaw profile have access.</p>
+
+    <h3>6. Legal basis (GDPR)</h3>
+    <p>We process public post and profile data on the basis of our legitimate interest (Art. 6(1)(f) GDPR) in managing our community presence and answering people who talk publicly about padel in Warsaw. You can object at any time, see "Your rights" below.</p>
+
+    <h3>7. Your rights</h3>
+    <p>If you are in the EU/EEA you have the right to access, rectify, erase or restrict processing of your personal data, to object to processing, and to lodge a complaint with a supervisory authority (in Poland: Prezes Urzędu Ochrony Danych Osobowych). To exercise any right, contact us as described below or follow the <a href="#data-deletion">data deletion instructions</a>.</p>
+
+    <h3>8. Contact</h3>
+    <div class="panel">
+      <p>Padel Warsaw, Warsaw, Poland</p>
+      <p>Direct message: <a href="https://www.threads.com/@padel_warsaw">@padel_warsaw on Threads</a> or <a href="https://www.instagram.com/padel_warsaw">@padel_warsaw on Instagram</a></p>
+    </div>
+
+    <h3>9. Changes</h3>
+    <p>We will update this page when the App changes. The effective date at the top shows the current version.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p class="updated">Effective 19 October 2026</p>
+    <p>Padel Warsaw Bot is an internal tool. It is operated only by the Padel Warsaw team and is not offered to the public, to other businesses or to other Threads users. Nobody outside our team can log in to the App or connect their Threads profile to it.</p>
+    <ul>
+      <li>The App is used exclusively for the @padel_warsaw profile and in accordance with the <a href="https://developers.facebook.com/terms/">Meta Platform Terms</a>, the <a href="https://developers.facebook.com/devpolicy/">Meta Developer Policies</a> and the Threads Terms of Use.</li>
+      <li>Replies published through the App follow the Threads Community Guidelines: they are relevant to the conversation, written individually and never sent in bulk.</li>
+      <li>We may stop using the App at any time. Stopping the App does not affect the public content already published on @padel_warsaw.</li>
+      <li>Questions about these terms: contact us as described in the Privacy Policy.</li>
+    </ul>
+  </section>
+
+  <section id="data-deletion">
+    <h2>Data Deletion Instructions</h2>
+    <p class="updated">Effective 19 October 2026</p>
+    <p>If the App has stored anything about you (for example a public post of yours returned by a keyword search), you can ask us to delete it.</p>
+    <ol>
+      <li>Send a direct message to <a href="https://www.threads.com/@padel_warsaw">@padel_warsaw on Threads</a> or <a href="https://www.instagram.com/padel_warsaw">@padel_warsaw on Instagram</a> with the words <code>delete my data</code> and your Threads username.</li>
+      <li>We will delete every record that contains your username or your posts within 7 days and confirm by reply.</li>
+      <li>Public post and profile data that we only read through the Threads API, without storing it, is not kept and needs no deletion.</li>
+    </ol>
+    <p>Data that the App reads from our own profile (@padel_warsaw) is deleted when we revoke the App's access in Threads → Settings → Account → Website permissions, or when the profile is deleted.</p>
+  </section>
+
+  <footer>Padel Warsaw Bot · Meta App ID 1550045047160672 · Threads profile @padel_warsaw</footer>
+</div>
+</body>
+</html>
